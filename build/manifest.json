@@ -1,6 +1,6 @@
 {
   "name": "Form Freedom",
-  "version": "1",
+  "version": "1.0.1",
   "manifest_version": 2,
   "description": "Never have to scroll to find the USA again",
   "browser_action": {
