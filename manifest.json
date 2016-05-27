@@ -1,0 +1,18 @@
+{
+  "name": "Form Freedom",
+  "version": "1",
+  "manifest_version": 2,
+  "description": "Never have to scroll to find the USA again",
+  "browser_action": {
+    "name": "Form Freedom",
+    "icons": ["icon.png"],
+    "default_icon": "icon.png"
+  },
+  "icons" : {
+    "16": "icon.png"
+  },
+  "content_scripts": [ {
+    "js": [ "jquery.min.js", "background.js" ],
+    "matches": [ "http://*/*", "https://*/*"]
+  }]
+}
