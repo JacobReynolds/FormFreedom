@@ -12,7 +12,7 @@
     "16": "icon.png"
   },
   "content_scripts": [ {
-    "js": [ "jquery.min.js", "background.js" ],
+    "js": [ "background.js" ],
     "matches": [ "http://*/*", "https://*/*"]
   }]
 }
