@@ -13,6 +13,17 @@
 		}
 
 	</style>
+	<script>
+		var statesArray = ['unitedstatesofamerica', 'us', 'unitedstates', 'america', 'usa'];
+		setTimeout(function() {
+			var elements = document.getElementsByTagName('select');
+			if (statesArray.indexOf(elements[0][0].text.replace(/ /g, '').toLowerCase()) > -1) {
+				//A little hacky, since vanilla JS doesn't allow removeClass
+				document.getElementById('downloaded').className = 'text-center';
+			}
+		}, 500)
+
+	</script>
 </head>
 
 <body>
@@ -27,7 +38,6 @@
 	<div class="text-center">
 		<span style="font-size:9px;">Form Freedom does not work in most payment and password forms due to security reasons.</span>
 	</div>
-	<br>
 	<div class="text-center">
 		<select name="country">
 			<option value="">Country...</option>
@@ -531,6 +541,8 @@
 			<option value="Zimbabwe" title="Zimbabwe">Zimbabwe</option>
 		</select>
 	</div>
+	<br>
+	<div class="text-center hidden" id="downloaded" style="font-size:24px;">It appears that you've downloaded Form Freedom, thanks!</div>
 </body>
 
 </html>
